@@ -1,15 +1,10 @@
 {
   "files": {
     "main.js": "/tobiusaolo/chatbot-plugin/static/js/chat.bundle.js",
-    "main.css": "/tobiusaolo/chatbot-plugin/static/css/main.e6c13ad2.css",
-    "static/js/453.c8aa3f11.chunk.js": "/tobiusaolo/chatbot-plugin/static/js/453.c8aa3f11.chunk.js",
     "index.html": "/tobiusaolo/chatbot-plugin/index.html",
-    "chat.bundle.js.map": "/tobiusaolo/chatbot-plugin/static/js/chat.bundle.js.map",
-    "main.e6c13ad2.css.map": "/tobiusaolo/chatbot-plugin/static/css/main.e6c13ad2.css.map",
-    "453.c8aa3f11.chunk.js.map": "/tobiusaolo/chatbot-plugin/static/js/453.c8aa3f11.chunk.js.map"
+    "chat.bundle.js.map": "/tobiusaolo/chatbot-plugin/static/js/chat.bundle.js.map"
   },
   "entrypoints": [
-    "static/js/chat.bundle.js",
-    "static/css/main.e6c13ad2.css"
+    "static/js/chat.bundle.js"
   ]
 }
