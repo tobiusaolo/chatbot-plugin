@@ -2,46 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <meta name="description" content="Web site created using create-react-app" />
+    <title>AI Chat Plugin</title>
+    <!-- Load React and ReactDOM from CDN -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <!-- Load Material-UI from CDN -->
     <script src="https://unpkg.com/@mui/material@latest/umd/material-ui.production.min.js"></script>
+    <!-- Load your bundled plugin script -->
+    <script src="./static/js/chat.bundle.js"></script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="ai-chat-root"></div>
     <script>
-      function initAIChatPlugin() {
-        // Initialize your chat plugin
-        ReactDOM.render(
-          React.createElement(Chat, {agentId:"Agent_key"}),
-          document.getElementById('ai-chat-root')
-        );
-      }
-      
-      // Call on page load
-      window.addEventListener('load', initAIChatPlugin);
+      // Initialize the chat plugin
+      window.initAIChatPlugin({
+        agentId: 'your-agent-id',
+        targetLang:'en',
+        botName:'AI Assistant',
+        containerId: 'ai-chat-root',
+      });
     </script>
   </body>
 </html>

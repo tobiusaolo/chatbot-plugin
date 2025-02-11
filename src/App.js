@@ -1,11 +1,19 @@
-import React, { useState, useEffect, useRef } from "react";
-import Chat from "./Chat"
+// App.js
+import React from 'react';
+import Chats from './Chats';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+// Create a MUI theme instance
+const theme = createTheme();
 
 const App = () => {
   return (
-    <div>
-      <Chat agentId="Agent_key" />
-    </div>
+    <ThemeProvider theme={theme}>
+      <Chats 
+      agentId="your-agent-id"
+      targetLang = "en"
+      botName = "Resume Assistant" />
+    </ThemeProvider>
   );
 };
 

@@ -1,4 +1,4 @@
-const { override, addWebpackModuleRule } = require('customize-cra');
+const { override } = require('customize-cra');
 
 module.exports = override((config) => {
   config.output = {
@@ -6,15 +6,13 @@ module.exports = override((config) => {
     filename: 'static/js/chat.bundle.js',
     library: 'AIChatPlugin',
     libraryTarget: 'umd',
-    publicPath: '/'
+    publicPath: '/',
   };
-  
+
   config.externals = {
-    'react': 'React',
+    react: 'React',
     'react-dom': 'ReactDOM',
-    '@mui/material': 'MaterialUI',
-    '@mui/icons-material': 'MaterialIcons'
   };
-  
+
   return config;
 });
