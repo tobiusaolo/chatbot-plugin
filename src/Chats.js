@@ -22,7 +22,7 @@ import {
   MoreVert as MoreIcon,
 } from '@mui/icons-material';
 
-const API_BASE_URL = 'https://phosaiv-98414212-8607-468b-9fc3.cranecloud.io';
+const API_BASE_URL = 'https://agents.tericlab.com:8000';
 
 const Chats = ({ agentId, botName, targetLang }) => {
   const [messages, setMessages] = useState([]);
