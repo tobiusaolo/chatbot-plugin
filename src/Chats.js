@@ -147,7 +147,7 @@ const Chats = ({ agentId, botName, targetLang }) => {
       </AppBar>
 
       {/* CHAT MESSAGES - Scrollable */}
-      <Box sx={{ flex: 1, overflowY: 'auto', p: 2 }}>
+      <Box sx={{ flex: 1, overflowY: 'auto', p: 3 }}>
         <Container maxWidth="sm">
           <Stack spacing={2}>
             {messages.map((message, index) => (
